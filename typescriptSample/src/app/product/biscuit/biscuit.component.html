@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12">  </div>
+                <div class="container col-sm-12" style="padding-top:50px">
+          <div class="panel panel-primary">
+            <div class="panel-heading text-center" ><h3>Shop from our tasty collection of biscuits!!!</h3></div>
+            <div class="panel-body">
+                <div class="text-center col-sm-12" style="padding-top:20px;color: rgb(92, 6, 92);" *ngIf="price">
+                    <h4>The {{productName}} costs {{price}} Rs only.</h4>
+                    </div>
+                    <div class="text-center col-sm-12" style="padding-top:20px;color:maroon;" *ngIf="monthsBeforeExpiry">
+                        
+                        <h4 > The {{prodName}} is best used within {{monthsBeforeExpiry}} months after production date</h4>
+                        
+                        </div>
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="../../../assets/DarkFantasy.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Dark Fantasy</h4>
+                        <div>
+                            <input type="number" #quant1 placeholder="Enter number of packets">
+                        
+                        <button class='btn btn-primary'(click)="getBiscuitPrice('Dark Fantasy',quant1.value)">Cost
+                            
+                        </button>
+                        </div>
+                        
+                        <button class="btn btn-primary" (click)="showExpiryDate('Dark Fantasy')">Check Expiry</button>
+                    </div>
+                </div>
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="../../../assets/ButterCookies.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Butter Cookies</h4>
+                        <div>
+                            <input type="number" #quant2 placeholder="Enter number of packets">
+                        
+                        <button class='btn btn-primary'(click)="getBiscuitPrice('Butter Cookies',quant2.value)">Cost
+                            
+                        </button>
+                        </div>
+                        
+                        
+                        <button class="btn btn-primary" (click)="showExpiryDate('Butter Cookies')">Check Expiry</button>
+                    </div>
+                </div>
+                <div class="card col-sm-4">
+                    <img class="card-img-top" src="../../../assets/TimTam.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Tim Tam</h4>
+                        <div>
+                            <input type="number" #quant3 placeholder="Enter number of packets">
+                        
+                        <button class='btn btn-primary'(click)="getBiscuitPrice('Tim Tam',quant3.value)">Cost
+                            
+                        </button>
+                        </div>
+                        
+                        <button class="btn btn-primary " (click)="showExpiryDate('Tim Tam')">Check Expiry</button>
+                        
+                    </div>
+                </div>
+                
+                
+                
+
+            </div>
+
+
+          </div>
+                </div>
+    </div>
+    
+</body>
+</html>

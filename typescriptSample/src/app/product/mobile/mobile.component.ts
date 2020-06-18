@@ -22,7 +22,7 @@ export class MobileComponent extends Electronics{
         
         let availableMobiles:any=this.mobileService.getAvailableMobiles();
         for (const item of availableMobiles){
-            if(item.colour==colour){
+            if(item.prodName==colour){
                 this.productName=colour;
                 if(item.stock==true){
                     this.isAvailable='available for purchase';

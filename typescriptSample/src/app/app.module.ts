@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
-import { MobileComponent } from './product/gadget/mobile.component';
+import { MobileComponent } from './product/mobile/mobile.component';
+import { BiscuitComponent } from './product/biscuit/biscuit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    MobileComponent
+    MobileComponent,
+    BiscuitComponent
   ],
   imports: [
     BrowserModule,

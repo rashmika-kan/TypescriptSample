@@ -29,12 +29,20 @@
         
                         <div>
                             <p class="text-center " style="padding-top: 50px">
-                            <button class="btn btn-primary" (click)="show=true">Are you ready to shop?</button>
+                            <button class="btn btn-primary" (click)="showMobile=true">Do you want to shop for Electronics?</button>
                             </p>
                         </div>
-                        <div *ngIf="show">
+                        <div>
+                            <p class="text-center " style="padding-top: 50px">
+                            <button class="btn btn-primary" (click)="showBiscuit=true">Do you want to shop for Edibles?</button>
+                            </p>
+                        </div>
+                        <div *ngIf="showMobile">
                            <app-mobile></app-mobile>
                         </div>
+                        <div *ngIf="showBiscuit">
+                            <app-biscuit></app-biscuit>
+                         </div>
                         
                     </div>
                     </div>

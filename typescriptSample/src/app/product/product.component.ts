@@ -13,7 +13,8 @@ export class ProductComponent implements CategoryInterface {
   cost:number;
   quantity:number;
   categoryName:string;
-  show:boolean=false;
+  showMobile:boolean=false;
+  showBiscuit:boolean=false;
 
   constructor() { }
 
